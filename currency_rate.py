@@ -12,8 +12,5 @@ attr_a_table = all_table[1].findAll('a') #на сайте две таблицы 
 currency = []
 
 for i in range(0, len(attr_a_table), 2):
-    currency.append(attr_a_table[i].text)
-    currency.append(attr_a_table[i + 1].text)
+    print("Курс доллара на",attr_a_table[i].text,attr_a_table[i + 1].text)
 
-for p in range(0, len(currency), 2):
-    print("Курс доллара на", currency[p], currency[p + 1])
